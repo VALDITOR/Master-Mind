@@ -1,0 +1,92 @@
+body{
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url(../images/wood.jpg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/*Indice*/
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 2em;
+    width: 7.5em;
+
+    color: white;
+
+    -webkit-text-stroke: 2px black;
+
+    font-weight: bold;
+
+    text-decoration: underline white;
+
+    border-radius: 20% 20% 20% 20%;
+
+    font-size: 7em;
+}
+
+.btns-menu{
+    width: 25em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 1em;
+    width: 12em;
+
+    font-size: 3em;
+
+    padding: 0.25em;
+
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    background-color: white;
+
+    border-radius: 20% 20% 20% 20%;
+
+    filter: drop-shadow( 25px 0px 20px black);
+
+    cursor: pointer;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-menu:hover{
+    transition: 0.5s;
+    font-size: 3.25em;
+}
+
+/*help*/
