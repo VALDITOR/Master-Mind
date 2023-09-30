@@ -212,3 +212,147 @@ a{
     height: 3em;
     width: 4.5em;
 }
+
+/*board*/
+.board-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 95vh;
+    width: 95vw;
+
+    border: 0.25em solid white;
+
+    border-radius: 5% 5% 5% 5%;
+}
+
+.container-board-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 95vh;
+    width: 33.3vw;
+}
+
+.board-color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+    height: 20em;
+    width: 20em;
+
+    background-color: white;
+
+    border-radius: 5% 5% 5% 5%;
+
+    border: 0.25em solid black;
+}
+
+.board-color-row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 20em;
+    width: 20em;
+
+    background-color: red;
+}
+
+.board-color-row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 20em;
+    width: 20em;
+
+    background-color: red;
+}
+
+.board-color-color0{
+    
+
+    height: 2em;
+    width: 2em;
+
+    background-color: blue;
+}
+
+.board-color-color1{
+    
+
+    height: 2em;
+    width: 2em;
+
+    background-color: green;
+}
+
+.board-color-color2{
+    
+
+    height: 2em;
+    width: 2em;
+
+    background-color: black;
+}
+
+.board-color-color3{
+    
+
+    height: 2em;
+    width: 2em;
+
+    background-color: white;
+}
+
+.container-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 95vh;
+    width: 33.3vw;
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 40em;
+    width: 30em;
+
+    background-color: white;
+
+    border-radius: 5% 5% 5% 5%;
+
+    border: 0.25em solid black;
+}
+
+.container-board-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 95vh;
+    width: 33.3vw;
+}
+
+.board-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 20em;
+    width: 20em;
+
+    background-color: white; 
+}
