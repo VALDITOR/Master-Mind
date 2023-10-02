@@ -241,16 +241,12 @@ a{
     justify-content: center;
     align-items: center;
     
-
-    
     height: 20em;
     width: 20em;
 
-    background-color: white;
-
     border-radius: 5% 5% 5% 5%;
 
-    border: 0.25em solid black;
+    
 }
 
 .board-color-row1{
@@ -261,8 +257,6 @@ a{
 
     height: 20em;
     width: 20em;
-
-    background-color: red;
 }
 
 .board-color-row2{
@@ -273,44 +267,47 @@ a{
 
     height: 20em;
     width: 20em;
-
-    background-color: red;
 }
 
 .board-color-color0{
-    
+    background-color: green;
 
-    height: 2em;
-    width: 2em;
+    height: 10em;
+    width: 10em;
 
-    background-color: blue;
+    border-radius: 25% 0% 0% 0%;
+
+    border: 0.25em solid black;
 }
 
 .board-color-color1{
-    
+    background-color: blue;
 
-    height: 2em;
-    width: 2em;
+    height: 10em;
+    width: 10em;
 
-    background-color: green;
+    border-radius: 0% 0% 0% 25%;
+    border: 0.25em solid black;
 }
 
 .board-color-color2{
-    
+    background-color: red;
 
-    height: 2em;
-    width: 2em;
+    height: 10em;
+    width: 10em;
 
-    background-color: black;
+    border-radius: 0% 25% 0% 0%;
+    border: 0.25em solid black;
 }
 
 .board-color-color3{
-    
+    background-color: purple;
 
-    height: 2em;
-    width: 2em;
+    height: 10em;
+    width: 10em;
 
-    background-color: white;
+    border-radius: 0% 0% 25% 0%;
+    border: 0.25em solid black;
 }
 
 .container-board{
@@ -326,6 +323,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
     height: 40em;
     width: 30em;
@@ -337,9 +335,64 @@ a{
     border: 0.25em solid black;
 }
 
-.container-board-btn{
+.board-row{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    background-color: red;
+
+    height: 4em;
+    width: 30em;
+    
+    
+}
+
+.board-cell{
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    background-color: blue;
+
+    height: 4em;
+    width: 20em;
+}
+
+.cell{
+    background-color: white;
+
+    border-radius: 100% 100% 100% 100%;
+
+    height: 3.5em;
+    width: 3.5em;
+
+    margin-right: 1em;
+}
+
+.board-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 4em;
+    width: 10em;
+}
+
+.check{
+    background-color: white;
+
+    border-radius: 100% 100% 100% 100%;
+
+    height: 1.75em;
+    width: 1.75em;
+
+    margin-right: 0.5em;
+}
+
+.container-board-btn{
+    display: flex;
+    justify-content: left;
     align-items: center;
     
     height: 95vh;
@@ -349,10 +402,14 @@ a{
 .board-btn{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
     
     height: 20em;
     width: 20em;
-
-    background-color: white; 
 }
+
+.btn-board-setting{
+    margin-bottom: 2em;
+}
+
