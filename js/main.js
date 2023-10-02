@@ -8,7 +8,7 @@ btnName.addEventListener("click", function() {
     inputName = userName.value;
   
     if (inputName.trim() !== "") {
-        localStorage.setItem("Valor", inputName);
+        localStorage.setItem("Name", inputName);
 
     }else {
         alert("Por favor, ingrese un valor antes de guardar en el Local Storage.");
