@@ -13,6 +13,11 @@ let color4 = localStorage.getItem('color4');
 let colors = [color1, color2, color3, color4];
 console.log(colors);
 
+firstColor.style.backgroundColor = color1
+secondColor.style.backgroundColor = color2
+thirdColor.style.backgroundColor = color3
+fourthColor.style.backgroundColor = color4
+
 
 //Generar codigo de colores aleatorio
 let code = [
