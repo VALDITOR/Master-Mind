@@ -5,33 +5,41 @@ let fourthColor = document.getElementById('fourthColor');
 let check = document.getElementById('check')
 let cell = document.getElementsByClassName("cell");
 let currentColor = " ";
-let codeColors = ["green","blue","red","purple"];
 let count = 3
+let color1 = localStorage.getItem('color1');
+let color2 = localStorage.getItem('color2');
+let color3 = localStorage.getItem('color3');
+let color4 = localStorage.getItem('color4');
+let colors = [color1, color2, color3, color4];
+console.log(colors);
+
 
 //Generar codigo de colores aleatorio
 let code = [
-    codeColors[Math.floor(Math.random()*4)], 
-    codeColors[Math.floor(Math.random()*4)],
-    codeColors[Math.floor(Math.random()*4)],
-    codeColors[Math.floor(Math.random()*4)]
+    colors[Math.floor(Math.random()*4)], 
+    colors[Math.floor(Math.random()*4)],
+    colors[Math.floor(Math.random()*4)],
+    colors[Math.floor(Math.random()*4)]
 ];
+
+console.log(code);
 
 //Seleccionar colores
 
 firstColor.addEventListener('click', (e) =>{
-    currentColor = codeColors[0];
+    currentColor = colors[0];
 })
 
 secondColor.addEventListener('click', (e) =>{
-    currentColor = codeColors[1];
+    currentColor = colors[1];
 })
 
 thirdColor.addEventListener('click', (e) =>{
-    currentColor = codeColors[2];
+    currentColor = colors[2];
 })
 
 fourthColor.addEventListener('click', (e) =>{
-    currentColor = codeColors[3];
+    currentColor = colors[3];
 
 })
 
@@ -42,3 +50,14 @@ cell[i].addEventListener('click', (e) =>{
     cell[i].style.backgroundColor = currentColor;
 })
 }
+
+
+
+
+
+
+
+
+    
+
+
