@@ -41,6 +41,10 @@ let code = [
     colors[Math.floor(Math.random() * 4)]
 ];
 
+let code0 = code[0];
+let code1 = code[1];
+let code2 = code[2];
+let code3 = code[3];
 console.log(code);
 
 //Guardar Code En el local storage
@@ -56,6 +60,7 @@ localStorage.setItem("saveCode2", codeJSON2);
 
 const codeJSON3 = JSON.stringify(code[3]);
 localStorage.setItem("saveCode3", codeJSON3);
+
 
 //Pasar colores de rgb a hexadecimal
 
@@ -73,22 +78,23 @@ function rgbToHex(rgb) {
 
 //Comparacion para ganar
 
-function win(colors, yourColors) {
-    let sCode = colors.toString();
+function win(code, yourColors) {
+    let newCode = [code0, code1, code2, code3];
+    console.log(newCode);
+    let sCode = newCode.toString();
     let sColors = yourColors.toString();
     rgbToHex(sColors)
-    console.log(rgbToHex(sColors));
+    console.log(sCode);
+    console.log(sColors);
     // Verificar si los dos arrays tienen la misma longitud
     if (sCode.length !== sColors.length) {
-        console.log(sCode);
-        console.log(sColors);
         return; // No hacer nada si los tamaños no coinciden
     }
-
     // Verificar si cada elemento en los dos arrays es igual
     for (let i = 0; i < sCode.length; i++) {
-        if (sCode[i] !== sColors[i]) {
-            console.log('entra')
+        if (sCode !== sColors) {
+            console.log(sCode);
+            console.log(sColors);
             return; // No hacer nada si algún elemento es diferente
 
         }
@@ -175,9 +181,6 @@ check.addEventListener('click', (e) => {
     if (yourColors[3] === code[3]) {
         check3.style.backgroundColor = "purple";
     }
-
-
-
     win(colors, yourColors)
     count++
     if (count === 1) {
@@ -201,4 +204,4 @@ check.addEventListener('click', (e) => {
 });
 
 
-
+// setTimeout(loser, 1) para ejecutar perder tiene que darle tiempo a ejecutarse ganar

@@ -328,7 +328,7 @@ a{
     height: 40em;
     width: 30em;
 
-    background-color: white;
+    background-color: darkblue;
 
     border-radius: 5% 5% 5% 5%;
 
@@ -340,7 +340,7 @@ a{
     justify-content: left;
     align-items: center;
 
-    background-color: red;
+ 
 
     height: 4em;
     width: 30em;
@@ -353,19 +353,19 @@ a{
     justify-content: center;
     align-items: center;
 
-    background-color: blue;
+ 
 
     height: 4em;
     width: 20em;
 }
 
 .cell{
-    background-color: white;
-
     border-radius: 100% 100% 100% 100%;
 
     height: 3.5em;
     width: 3.5em;
+
+    background-color: whitesmoke;
 
     margin-right: 1em;
 
@@ -382,7 +382,7 @@ a{
 }
 
 .check{
-    background-color: white;
+    background-color: whitesmoke;
 
     border-radius: 100% 100% 100% 100%;
 
@@ -390,6 +390,8 @@ a{
     width: 1.75em;
 
     margin-right: 0.5em;
+
+    border: 2px solid black;
 }
 
 .container-board-btn{
@@ -413,5 +415,13 @@ a{
 
 .btn-board-setting{
     margin-bottom: 2em;
+}
+
+.cell:hover{
+    cursor: pointer;
+}
+
+.board-pointer{
+    cursor: pointer;
 }
 
