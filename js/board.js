@@ -43,6 +43,20 @@ let code = [
 
 console.log(code);
 
+//Guardar Code En el local storage
+
+const codeJSON0 = JSON.stringify(code[0]);
+localStorage.setItem("saveCode0", codeJSON0);
+
+const codeJSON1 = JSON.stringify(code[1]);
+localStorage.setItem("saveCode1", codeJSON1);
+
+const codeJSON2 = JSON.stringify(code[2]);
+localStorage.setItem("saveCode2", codeJSON2);
+
+const codeJSON3 = JSON.stringify(code[3]);
+localStorage.setItem("saveCode3", codeJSON3);
+
 //Pasar colores de rgb a hexadecimal
 
 function rgbToHex(rgb) {

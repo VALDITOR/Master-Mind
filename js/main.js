@@ -5,7 +5,7 @@ let inputName
 
 btnName.addEventListener("click", function () {
 
-    inputName = userName.value;
+    inputName = userName.value.toUpperCase();
 
     if (inputName.trim() !== "") {
         localStorage.setItem("name", inputName);
