@@ -136,17 +136,34 @@ check.addEventListener('click', (e) => {
     yourColors[1] = rgbToHex(yourColors[1]);
     yourColors[2] = rgbToHex(yourColors[2]);
     yourColors[3] = rgbToHex(yourColors[3]);
+    if (yourColors[0] === code[1] || yourColors[0] === code[2] || yourColors[0] === code[3]) {
+        check0.style.backgroundColor = "black";
+    }
+    if (yourColors[1] === code[0] || yourColors[1] === code[2] || yourColors[1] === code[3]) {
+        check1.style.backgroundColor = "black";
+    }
+    if (yourColors[2] === code[0] || yourColors[2] === code[1] || yourColors[2] === code[3]) {
+        check2.style.backgroundColor = "black";
+    }
+    if (yourColors[3] === code[0] || yourColors[3] === code[2] || yourColors[3] === code[2]) {
+        check3.style.backgroundColor = "black";
+    }
+
     if (yourColors[0] === code[0]) {
         check0.style.backgroundColor = "purple";
-    } else if (yourColors[1] === code[1]) {
+    }
+    if (yourColors[1] === code[1]) {
         check1.style.backgroundColor = "purple";
     }
-    else if (yourColors[2] === code[2]) {
+    if (yourColors[2] === code[2]) {
         check2.style.backgroundColor = "purple";
     }
-    else if (yourColors[3] === code[3]) {
+    if (yourColors[3] === code[3]) {
         check3.style.backgroundColor = "purple";
     }
+
+
+
     win(colors, yourColors)
     count++
     if (count === 1) {
