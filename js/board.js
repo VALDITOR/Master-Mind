@@ -13,6 +13,10 @@ let cell4 = document.getElementById('cell4');
 let cell5 = document.getElementById('cell5');
 let cell6 = document.getElementById('cell6');
 let cell7 = document.getElementById('cell7');
+let check0 = document.getElementById('check0');
+let check1 = document.getElementById('check1');
+let check2 = document.getElementById('check2');
+let check3 = document.getElementById('check3');
 let currentColor = " ";
 let count = 0;
 let color1 = localStorage.getItem('color1');
@@ -132,7 +136,17 @@ check.addEventListener('click', (e) => {
     yourColors[1] = rgbToHex(yourColors[1]);
     yourColors[2] = rgbToHex(yourColors[2]);
     yourColors[3] = rgbToHex(yourColors[3]);
-    console.log(yourColors);
+    if (yourColors[0] === code[0]) {
+        check0.style.backgroundColor = "purple";
+    } else if (yourColors[1] === code[1]) {
+        check1.style.backgroundColor = "purple";
+    }
+    else if (yourColors[2] === code[2]) {
+        check2.style.backgroundColor = "purple";
+    }
+    else if (yourColors[3] === code[3]) {
+        check3.style.backgroundColor = "purple";
+    }
     win(colors, yourColors)
     count++
     if (count === 1) {
