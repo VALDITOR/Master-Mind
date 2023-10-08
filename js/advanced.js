@@ -27,22 +27,6 @@ let cell20 = document.getElementById('cell20');
 let cell21 = document.getElementById('cell21');
 let cell22 = document.getElementById('cell22');
 let cell23 = document.getElementById('cell23');
-let cell24 = document.getElementById('cell24');
-let cell25 = document.getElementById('cell25');
-let cell26 = document.getElementById('cell26');
-let cell27 = document.getElementById('cell27');
-let cell28 = document.getElementById('cell28');
-let cell29 = document.getElementById('cell29');
-let cell30 = document.getElementById('cell30');
-let cell31 = document.getElementById('cell31');
-let cell32 = document.getElementById('cell32');
-let cell33 = document.getElementById('cell33');
-let cell34 = document.getElementById('cell34');
-let cell35 = document.getElementById('cell35');
-let cell36 = document.getElementById('cell36');
-let cell37 = document.getElementById('cell37');
-let cell38 = document.getElementById('cell38');
-let cell39 = document.getElementById('cell39');
 let check0 = document.getElementById('check0');
 let check1 = document.getElementById('check1');
 let check2 = document.getElementById('check2');
@@ -67,22 +51,6 @@ let check20 = document.getElementById('check20');
 let check21 = document.getElementById('check21');
 let check22 = document.getElementById('check22');
 let check23 = document.getElementById('check23');
-let check24 = document.getElementById('check24');
-let check25 = document.getElementById('check25');
-let check26 = document.getElementById('check26');
-let check27 = document.getElementById('check27');
-let check28 = document.getElementById('check28');
-let check29 = document.getElementById('check29');
-let check30 = document.getElementById('check30');
-let check31 = document.getElementById('check31');
-let check32 = document.getElementById('check32');
-let check33 = document.getElementById('check33');
-let check34 = document.getElementById('check34');
-let check35 = document.getElementById('check35');
-let check36 = document.getElementById('check36');
-let check37 = document.getElementById('check37');
-let check38 = document.getElementById('check38');
-let check39 = document.getElementById('check39');
 let currentColor = " ";
 let count = 0;
 let countCheck = 0;
@@ -173,7 +141,7 @@ function win(code, yourColors) {
 //Condicion perder
 
 function loser() {
-    if (count === 10) {
+    if (count === 6) {
         window.location.href = '../pages/loser.html'
     }
 }
@@ -497,203 +465,6 @@ check.addEventListener('click', (e) => {
         if (yourColors[3] === code[3]) {
             check23.style.backgroundColor = "purple";
         }
-    }
-    if (count === 6) {
-        cell24.addEventListener('click', (e) => {
-            cell24.style.backgroundColor = currentColor;
-            yourColors[0] = cell24.style.backgroundColor;
-        })
-        cell25.addEventListener('click', (e) => {
-            cell25.style.backgroundColor = currentColor;
-            yourColors[1] = cell25.style.backgroundColor;
-        })
-        cell26.addEventListener('click', (e) => {
-            cell26.style.backgroundColor = currentColor;
-            yourColors[2] = cell26.style.backgroundColor;
-        })
-        cell27.addEventListener('click', (e) => {
-            cell27.style.backgroundColor = currentColor;
-            yourColors[3] = cell27.style.backgroundColor;
-        })
-    }
-    if (countCheck === 7) {
-        yourColors[0] = rgbToHex(yourColors[0]);
-        yourColors[1] = rgbToHex(yourColors[1]);
-        yourColors[2] = rgbToHex(yourColors[2]);
-        yourColors[3] = rgbToHex(yourColors[3]);
-        if (yourColors[0] === code[1] || yourColors[0] === code[2] || yourColors[0] === code[3]) {
-            check24.style.backgroundColor = "black";
-        }
-        if (yourColors[1] === code[0] || yourColors[1] === code[2] || yourColors[1] === code[3]) {
-            check25.style.backgroundColor = "black";
-        }
-        if (yourColors[2] === code[0] || yourColors[2] === code[1] || yourColors[2] === code[3]) {
-            check26.style.backgroundColor = "black";
-        }
-        if (yourColors[3] === code[0] || yourColors[3] === code[2] || yourColors[3] === code[2]) {
-            check27.style.backgroundColor = "black";
-        }
-
-        if (yourColors[0] === code[0]) {
-            check24.style.backgroundColor = "purple";
-        }
-        if (yourColors[1] === code[1]) {
-            check25.style.backgroundColor = "purple";
-        }
-        if (yourColors[2] === code[2]) {
-            check26.style.backgroundColor = "purple";
-        }
-        if (yourColors[3] === code[3]) {
-            check27.style.backgroundColor = "purple";
-        }
-    }
-    if (count === 7) {
-        cell28.addEventListener('click', (e) => {
-            cell28.style.backgroundColor = currentColor;
-            yourColors[0] = cell28.style.backgroundColor;
-        })
-        cell29.addEventListener('click', (e) => {
-            cell29.style.backgroundColor = currentColor;
-            yourColors[1] = cell29.style.backgroundColor;
-        })
-        cell30.addEventListener('click', (e) => {
-            cell30.style.backgroundColor = currentColor;
-            yourColors[2] = cell30.style.backgroundColor;
-        })
-        cell31.addEventListener('click', (e) => {
-            cell31.style.backgroundColor = currentColor;
-            yourColors[3] = cell31.style.backgroundColor;
-        })
-    }
-    if (countCheck === 8) {
-        yourColors[0] = rgbToHex(yourColors[0]);
-        yourColors[1] = rgbToHex(yourColors[1]);
-        yourColors[2] = rgbToHex(yourColors[2]);
-        yourColors[3] = rgbToHex(yourColors[3]);
-        if (yourColors[0] === code[1] || yourColors[0] === code[2] || yourColors[0] === code[3]) {
-            check28.style.backgroundColor = "black";
-        }
-        if (yourColors[1] === code[0] || yourColors[1] === code[2] || yourColors[1] === code[3]) {
-            check29.style.backgroundColor = "black";
-        }
-        if (yourColors[2] === code[0] || yourColors[2] === code[1] || yourColors[2] === code[3]) {
-            check30.style.backgroundColor = "black";
-        }
-        if (yourColors[3] === code[0] || yourColors[3] === code[2] || yourColors[3] === code[2]) {
-            check31.style.backgroundColor = "black";
-        }
-
-        if (yourColors[0] === code[0]) {
-            check28.style.backgroundColor = "purple";
-        }
-        if (yourColors[1] === code[1]) {
-            check29.style.backgroundColor = "purple";
-        }
-        if (yourColors[2] === code[2]) {
-            check30.style.backgroundColor = "purple";
-        }
-        if (yourColors[3] === code[3]) {
-            check31.style.backgroundColor = "purple";
-        }
-    }
-    if (count === 8) {
-        cell32.addEventListener('click', (e) => {
-            cell32.style.backgroundColor = currentColor;
-            yourColors[0] = cell32.style.backgroundColor;
-        })
-        cell33.addEventListener('click', (e) => {
-            cell33.style.backgroundColor = currentColor;
-            yourColors[1] = cell33.style.backgroundColor;
-        })
-        cell34.addEventListener('click', (e) => {
-            cell34.style.backgroundColor = currentColor;
-            yourColors[2] = cell34.style.backgroundColor;
-        })
-        cell35.addEventListener('click', (e) => {
-            cell35.style.backgroundColor = currentColor;
-            yourColors[3] = cell35.style.backgroundColor;
-        })
-    }
-    if (countCheck === 9) {
-        yourColors[0] = rgbToHex(yourColors[0]);
-        yourColors[1] = rgbToHex(yourColors[1]);
-        yourColors[2] = rgbToHex(yourColors[2]);
-        yourColors[3] = rgbToHex(yourColors[3]);
-        if (yourColors[0] === code[1] || yourColors[0] === code[2] || yourColors[0] === code[3]) {
-            check32.style.backgroundColor = "black";
-        }
-        if (yourColors[1] === code[0] || yourColors[1] === code[2] || yourColors[1] === code[3]) {
-            check33.style.backgroundColor = "black";
-        }
-        if (yourColors[2] === code[0] || yourColors[2] === code[1] || yourColors[2] === code[3]) {
-            check34.style.backgroundColor = "black";
-        }
-        if (yourColors[3] === code[0] || yourColors[3] === code[2] || yourColors[3] === code[2]) {
-            check35.style.backgroundColor = "black";
-        }
-
-        if (yourColors[0] === code[0]) {
-            check32.style.backgroundColor = "purple";
-        }
-        if (yourColors[1] === code[1]) {
-            check33.style.backgroundColor = "purple";
-        }
-        if (yourColors[2] === code[2]) {
-            check34.style.backgroundColor = "purple";
-        }
-        if (yourColors[3] === code[3]) {
-            check35.style.backgroundColor = "purple";
-        }
-    }
-    if (count === 9) {
-        cell36.addEventListener('click', (e) => {
-            cell36.style.backgroundColor = currentColor;
-            yourColors[0] = cell36.style.backgroundColor;
-        })
-        cell37.addEventListener('click', (e) => {
-            cell37.style.backgroundColor = currentColor;
-            yourColors[1] = cell37.style.backgroundColor;
-        })
-        cell38.addEventListener('click', (e) => {
-            cell38.style.backgroundColor = currentColor;
-            yourColors[2] = cell38.style.backgroundColor;
-        })
-        cell39.addEventListener('click', (e) => {
-            cell39.style.backgroundColor = currentColor;
-            yourColors[3] = cell39.style.backgroundColor;
-        })
-    }
-    if (countCheck === 10) {
-        yourColors[0] = rgbToHex(yourColors[0]);
-        yourColors[1] = rgbToHex(yourColors[1]);
-        yourColors[2] = rgbToHex(yourColors[2]);
-        yourColors[3] = rgbToHex(yourColors[3]);
-        if (yourColors[0] === code[1] || yourColors[0] === code[2] || yourColors[0] === code[3]) {
-            check36.style.backgroundColor = "black";
-        }
-        if (yourColors[1] === code[0] || yourColors[1] === code[2] || yourColors[1] === code[3]) {
-            check37.style.backgroundColor = "black";
-        }
-        if (yourColors[2] === code[0] || yourColors[2] === code[1] || yourColors[2] === code[3]) {
-            check38.style.backgroundColor = "black";
-        }
-        if (yourColors[3] === code[0] || yourColors[3] === code[2] || yourColors[3] === code[2]) {
-            check39.style.backgroundColor = "black";
-        }
-
-        if (yourColors[0] === code[0]) {
-            check36.style.backgroundColor = "purple";
-        }
-        if (yourColors[1] === code[1]) {
-            check37.style.backgroundColor = "purple";
-        }
-        if (yourColors[2] === code[2]) {
-            check38.style.backgroundColor = "purple";
-        }
-        if (yourColors[3] === code[3]) {
-            check39.style.backgroundColor = "purple";
-        }
-
     }
     win(colors, yourColors);
 }
