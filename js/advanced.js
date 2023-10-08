@@ -60,14 +60,12 @@ let color3 = localStorage.getItem('color3');
 let color4 = localStorage.getItem('color4');
 let colors = [color1, color2, color3, color4];
 let yourColors = ["red", "red", "red", "red"];
-console.log(colors);
 
 firstColor.style.backgroundColor = color1
 secondColor.style.backgroundColor = color2
 thirdColor.style.backgroundColor = color3
 fourthColor.style.backgroundColor = color4
 
-//Generar codigo de colores aleatorio
 let code = [
     colors[Math.floor(Math.random() * 4)],
     colors[Math.floor(Math.random() * 4)],
@@ -79,9 +77,7 @@ let code0 = code[0];
 let code1 = code[1];
 let code2 = code[2];
 let code3 = code[3];
-console.log(code);
 
-//Guardar Code En el local storage
 
 const codeJSON0 = JSON.stringify(code[0]);
 localStorage.setItem("saveCode0", codeJSON0);
@@ -96,7 +92,6 @@ const codeJSON3 = JSON.stringify(code[3]);
 localStorage.setItem("saveCode3", codeJSON3);
 
 
-//Pasar colores de rgb a hexadecimal
 
 function rgbToHex(rgb) {
     let rgbValores = rgb.match(/\d+/g);
@@ -110,35 +105,23 @@ function rgbToHex(rgb) {
 }
 
 
-//Comparacion para ganar
-
 function win(code, yourColors) {
     let newCode = [code0, code1, code2, code3];
-    console.log(newCode);
     let sCode = newCode.toString();
     let sColors = yourColors.toString();
     rgbToHex(sColors)
-    console.log(sCode);
-    console.log(sColors);
-    // Verificar si los dos arrays tienen la misma longitud
     if (sCode.length !== sColors.length) {
-        return; // No hacer nada si los tamaños no coinciden
+        return;
     }
-    // Verificar si cada elemento en los dos arrays es igual
+
     for (let i = 0; i < sCode.length; i++) {
         if (sCode !== sColors) {
-            console.log(sCode);
-            console.log(sColors);
-            return; // No hacer nada si algún elemento es diferente
+            return;
 
         }
     }
-
-    // Si llegamos aquí, los arrays son iguales, así que redirigimos a otra página
     window.location.href = '../pages/win.html';
 }
-
-//Condicion perder
 
 function loser() {
     if (count === 6) {
@@ -146,8 +129,6 @@ function loser() {
     }
 }
 
-
-//Seleccionar colores
 
 firstColor.addEventListener('click', (e) => {
     currentColor = colors[0];
@@ -166,7 +147,6 @@ fourthColor.addEventListener('click', (e) => {
 
 })
 
-//Pintar casillas
 if (count === 0) {
     cell0.addEventListener('click', (e) => {
         cell0.style.backgroundColor = currentColor;
@@ -185,7 +165,6 @@ if (count === 0) {
         yourColors[3] = cell3.style.backgroundColor;
     })
 }
-//fila 2
 check.addEventListener('click', (e) => {
     countCheck++;
     count++

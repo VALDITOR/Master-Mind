@@ -8,9 +8,7 @@ let colorWin1 = document.getElementById('colorWin1')
 let colorWin2 = document.getElementById('colorWin2')
 let colorWin3 = document.getElementById('colorWin3')
 
-// Verifica si el valor existe en el localStorage
 if (nameWL !== null) {
-    // Si existe, muestra el valor en el div
     let nameWinLost = document.getElementById('nameWinLost');
     nameWinLost.textContent = 'YOU WIN ' + nameWL;
 }

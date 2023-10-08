@@ -16,8 +16,6 @@ body{
     background-repeat:no-repeat;
 }
 
-/*Indice*/
-
 .menu{
     display: flex;
     align-items: center;
@@ -88,11 +86,6 @@ a{
     transition: 0.5s;
     font-size: 3.25em;
 }
-
-/*help*/
-
-
-/*name*/
 
 .section-tittle{
     display: flex;
@@ -172,7 +165,6 @@ a{
     font-size: 2em;
 }
 
-/*color*/
 .colors{
     display: flex;
     align-items: center;
@@ -213,7 +205,6 @@ a{
     width: 4.5em;
 }
 
-/*board*/
 .board-div{
     display: flex;
     justify-content: center;
@@ -340,20 +331,14 @@ a{
     justify-content: left;
     align-items: center;
 
- 
-
     height: 4em;
     width: 30em;
-    
-    
 }
 
 .board-cell{
     display: flex;
     justify-content: center;
     align-items: center;
-
- 
 
     height: 4em;
     width: 20em;
