@@ -502,3 +502,54 @@ a{
 
     border: 0.25em solid black;
 }
+
+.help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.help-secctions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-secction{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    height: 30em;
+    width: 25em;
+
+    border-radius: 5% 5% 5% 5%;
+
+    border: 0.25em solid white;
+
+    margin: 0em 1em 1.5em 1em;
+
+    background-color: black;
+}
+
+.help-tittle{
+    font-size: 2em;
+
+    color: white;
+
+    text-decoration: underline;
+
+    margin-top: 0.25em;
+}
+
+.help-text{
+    font-size: 1.2em;
+
+    color: whitesmoke;
+
+    -webkit-text-stroke: 0.02em white;
+
+    margin: 0em 0.5em 0.7em 0.5em;
+}
