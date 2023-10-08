@@ -56,6 +56,6 @@ btnColorPage.addEventListener("click", function () {
     } else if (box3.style.backgroundColor === "") {
         alert("You cannot leave a cell empty or duplicate");
     } else {
-        window.location.href = "board.html"
+        window.location.href = "level.html"
     }
 });
