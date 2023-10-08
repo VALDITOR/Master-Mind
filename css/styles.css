@@ -486,3 +486,19 @@ a{
 
     border: 0.25em solid black;
 }
+
+.board-mm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 18em;
+    width: 30em;
+
+    background-color: darkblue;
+
+    border-radius: 5% 5% 5% 5%;
+
+    border: 0.25em solid black;
+}

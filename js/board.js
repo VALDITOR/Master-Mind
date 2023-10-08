@@ -693,6 +693,7 @@ check.addEventListener('click', (e) => {
         if (yourColors[3] === code[3]) {
             check39.style.backgroundColor = "purple";
         }
+
     }
     win(colors, yourColors);
 }

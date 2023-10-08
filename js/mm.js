@@ -19,14 +19,6 @@ let cell12 = document.getElementById('cell12');
 let cell13 = document.getElementById('cell13');
 let cell14 = document.getElementById('cell14');
 let cell15 = document.getElementById('cell15');
-let cell16 = document.getElementById('cell16');
-let cell17 = document.getElementById('cell17');
-let cell18 = document.getElementById('cell18');
-let cell19 = document.getElementById('cell19');
-let cell20 = document.getElementById('cell20');
-let cell21 = document.getElementById('cell21');
-let cell22 = document.getElementById('cell22');
-let cell23 = document.getElementById('cell23');
 let check0 = document.getElementById('check0');
 let check1 = document.getElementById('check1');
 let check2 = document.getElementById('check2');
@@ -43,14 +35,6 @@ let check12 = document.getElementById('check12');
 let check13 = document.getElementById('check13');
 let check14 = document.getElementById('check14');
 let check15 = document.getElementById('check15');
-let check16 = document.getElementById('check16');
-let check17 = document.getElementById('check17');
-let check18 = document.getElementById('check18');
-let check19 = document.getElementById('check19');
-let check20 = document.getElementById('check20');
-let check21 = document.getElementById('check21');
-let check22 = document.getElementById('check22');
-let check23 = document.getElementById('check23');
 let currentColor = " ";
 let count = 0;
 let countCheck = 0;
@@ -141,7 +125,7 @@ function win(code, yourColors) {
 //Condicion perder
 
 function loser() {
-    if (count === 6) {
+    if (count === 4) {
         window.location.href = '../pages/loser.html'
     }
 }
@@ -366,104 +350,6 @@ check.addEventListener('click', (e) => {
         }
         if (yourColors[3] === code[3]) {
             check15.style.backgroundColor = "purple";
-        }
-    }
-    if (count === 4) {
-        cell16.addEventListener('click', (e) => {
-            cell16.style.backgroundColor = currentColor;
-            yourColors[0] = cell16.style.backgroundColor;
-        })
-        cell17.addEventListener('click', (e) => {
-            cell17.style.backgroundColor = currentColor;
-            yourColors[1] = cell17.style.backgroundColor;
-        })
-        cell18.addEventListener('click', (e) => {
-            cell18.style.backgroundColor = currentColor;
-            yourColors[2] = cell18.style.backgroundColor;
-        })
-        cell19.addEventListener('click', (e) => {
-            cell19.style.backgroundColor = currentColor;
-            yourColors[3] = cell19.style.backgroundColor;
-        })
-    }
-    if (countCheck === 5) {
-        yourColors[0] = rgbToHex(yourColors[0]);
-        yourColors[1] = rgbToHex(yourColors[1]);
-        yourColors[2] = rgbToHex(yourColors[2]);
-        yourColors[3] = rgbToHex(yourColors[3]);
-        if (yourColors[0] === code[1] || yourColors[0] === code[2] || yourColors[0] === code[3]) {
-            check16.style.backgroundColor = "black";
-        }
-        if (yourColors[1] === code[0] || yourColors[1] === code[2] || yourColors[1] === code[3]) {
-            check17.style.backgroundColor = "black";
-        }
-        if (yourColors[2] === code[0] || yourColors[2] === code[1] || yourColors[2] === code[3]) {
-            check18.style.backgroundColor = "black";
-        }
-        if (yourColors[3] === code[0] || yourColors[3] === code[2] || yourColors[3] === code[2]) {
-            check19.style.backgroundColor = "black";
-        }
-
-        if (yourColors[0] === code[0]) {
-            check16.style.backgroundColor = "purple";
-        }
-        if (yourColors[1] === code[1]) {
-            check17.style.backgroundColor = "purple";
-        }
-        if (yourColors[2] === code[2]) {
-            check18.style.backgroundColor = "purple";
-        }
-        if (yourColors[3] === code[3]) {
-            check19.style.backgroundColor = "purple";
-        }
-    }
-    if (count === 5) {
-        cell20.addEventListener('click', (e) => {
-            cell20.style.backgroundColor = currentColor;
-            yourColors[0] = cell20.style.backgroundColor;
-        })
-        cell21.addEventListener('click', (e) => {
-            cell21.style.backgroundColor = currentColor;
-            yourColors[1] = cell21.style.backgroundColor;
-        })
-        cell22.addEventListener('click', (e) => {
-            cell22.style.backgroundColor = currentColor;
-            yourColors[2] = cell22.style.backgroundColor;
-        })
-        cell23.addEventListener('click', (e) => {
-            cell23.style.backgroundColor = currentColor;
-            yourColors[3] = cell23.style.backgroundColor;
-        })
-    }
-    if (countCheck === 6) {
-        yourColors[0] = rgbToHex(yourColors[0]);
-        yourColors[1] = rgbToHex(yourColors[1]);
-        yourColors[2] = rgbToHex(yourColors[2]);
-        yourColors[3] = rgbToHex(yourColors[3]);
-        if (yourColors[0] === code[1] || yourColors[0] === code[2] || yourColors[0] === code[3]) {
-            check20.style.backgroundColor = "black";
-        }
-        if (yourColors[1] === code[0] || yourColors[1] === code[2] || yourColors[1] === code[3]) {
-            check21.style.backgroundColor = "black";
-        }
-        if (yourColors[2] === code[0] || yourColors[2] === code[1] || yourColors[2] === code[3]) {
-            check22.style.backgroundColor = "black";
-        }
-        if (yourColors[3] === code[0] || yourColors[3] === code[2] || yourColors[3] === code[2]) {
-            check23.style.backgroundColor = "black";
-        }
-
-        if (yourColors[0] === code[0]) {
-            check20.style.backgroundColor = "purple";
-        }
-        if (yourColors[1] === code[1]) {
-            check21.style.backgroundColor = "purple";
-        }
-        if (yourColors[2] === code[2]) {
-            check22.style.backgroundColor = "purple";
-        }
-        if (yourColors[3] === code[3]) {
-            check23.style.backgroundColor = "purple";
         }
     }
     win(colors, yourColors);
