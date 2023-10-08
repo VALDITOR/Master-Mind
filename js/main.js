@@ -3,18 +3,18 @@ let userName = document.getElementById('userName');
 
 let inputName
 
-btnName.addEventListener("click", function() {
+btnName.addEventListener("click", function () {
 
-    inputName = userName.value;
-  
+    inputName = userName.value.toUpperCase();
+
     if (inputName.trim() !== "") {
         localStorage.setItem("name", inputName);
+        window.location.href = "color.html"
 
-    }else {
-        alert("Por favor, ingrese un valor antes de guardar en el Local Storage.");
+    } else {
+        alert("Please insert a name.");
     }
-  });
+});
 
 
 
- 
