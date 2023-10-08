@@ -425,3 +425,48 @@ a{
     cursor: pointer;
 }
 
+.levels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 2.5em;
+    width: 12em;
+
+    font-size: 2em;
+
+    padding: 0.25em;
+
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    background-color: white;
+
+    border-radius: 20% 20% 20% 20%;
+
+    filter: drop-shadow( 25px 0px 20px black);
+
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+    cursor: pointer;
+}
+
+.level-select:hover{
+    transition: 0.5s;
+    font-size: 2.5em;
+}
